@@ -17,7 +17,7 @@ namespace AwaitAsyncTraining
             await asyncTask1.FooAsync();
             await asyncTask2.FooAsync();
             stopwatch.Stop();
-            Console.WriteLine($"Elapsed time for regular tasks: {stopwatch.ElapsedMilliseconds}");
+            Console.WriteLine($"Elapsed time for async tasks: {stopwatch.ElapsedMilliseconds}");
             Debug.Assert(stopwatch.ElapsedMilliseconds < 3000);
         }
     }
